@@ -1,0 +1,44 @@
+body {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    img {
+        max-width: 200px;
+        border-radius: 8px;
+    }
+    ul {
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    .home-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #007BFF;
+    }
