@@ -1,44 +1,95 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
 body {
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-        background-color: #f4f4f4;
-    }
-    .container {
-        max-width: 800px;
-        margin: auto;
-        background: white;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-    }
-    h1 {
-        text-align: center;
-    }
-    .content {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    img {
-        max-width: 200px;
-        border-radius: 8px;
-    }
-    ul {
-        background: #fff;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
-    li {
-        margin-bottom: 10px;
-    }
-    .home-link {
-        display: block;
-        text-align: center;
-        margin-top: 20px;
-        text-decoration: none;
-        font-weight: bold;
-        color: #007BFF;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    flex: 1; /* Pushes the footer down */
+    background: rgb(229, 248, 214);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center; /* Centers all items */
+    gap: 20px; /* Adds space between items */
+}
+
+.link-item {
+    display: flex;
+    flex-direction: column; /* Stacks image above link */
+    align-items: center; /* Centers content */
+    text-align: center;
+}
+
+.link-item img {
+    width: 100px; /* Adjust as needed */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content img {
+    height: 300px; /* Fixed height */
+    width: 250px;  /* Fixed width */
+    object-fit: cover; /* Ensures it fills the given height without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners for aesthetics */
+    display: block; /* Removes unwanted extra spacing */
+}
+
+ul {
+    background: #eedddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.home-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+footer {
+    background-color: #fcd2d2;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    width: 100%;
+}
+
